@@ -1,0 +1,25 @@
+body {
+  background: url('../assets/background.png');
+  background-repeat: none;
+  background-size: cover;
+  opacity: 0.8;
+  height: 100%;
+}
+
+h1, h4 {
+  font-weight: bold;
+}
+
+.App {
+  text-align: center;
+  padding: 5%;
+}
+
+.right-button {
+  cursor: pointer;
+  float: right;
+}
+
+.list-item {
+  display: inline-block;
+}

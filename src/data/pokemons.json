@@ -1,0 +1,62 @@
+  [
+    {
+      "id": 1,
+      "name": "Bulbasaur",
+      "maxCP": 981,
+      "type": ["grass", "poison"]
+    },
+    {
+      "id": 4,
+      "name": "Charmander",
+      "maxCP": 831,
+      "type": ["fire"]
+    },
+    {
+      "id": 7,
+      "name": "Squirtle",
+      "maxCP": 808,
+      "type": ["water"]
+    },
+    {
+      "id": 10,
+      "name": "Caterpie",
+      "maxCP": 393,
+      "type": ["bug"]
+    },
+    {
+      "id": 13,
+      "name": "Weedle",
+      "maxCP": 397,
+      "type": ["bug", "poison"]
+    },
+    {
+      "id": 16,
+      "name": "Pidgey",
+      "maxCP": 580,
+      "type": ["normal", "flying"]
+    },
+    {
+      "id": 19,
+      "name": "Rattata",
+      "maxCP": 588,
+      "type": ["normal"]
+    },
+    {
+      "id": 21,
+      "name": "Spearow",
+      "maxCP": 673,
+      "type": ["normal", "flying"]
+    },
+    {
+      "id": 23,
+      "name": "Ekans",
+      "maxCP": 778,
+      "type": ["poison"]
+    },
+    {
+      "id": 25,
+      "name": "Pikachu",
+      "maxCP": 787,
+      "type": ["electric"]
+    }
+]
