@@ -3,7 +3,8 @@ import {connect} from 'react-redux';
 
 const NA = {
   id: 0,
-  name: 'NA'
+  name: 'NA',
+  type: ['normal']
 }
 
 class SquadStats extends Component {
@@ -25,15 +26,23 @@ class SquadStats extends Component {
   }
 
   render() {
+    let strongestPokemon = this.strongestPokemon();
+    let weakestPokemon = this.weakestPokemon();
     return (
       <div>
         <h4>SquadStats</h4>
         <ul className='list-group'>
-          <li className='list-group-item'>
-            <b>Strongest Pokemon: {this.strongestPokemon().name} </b>
+          <li
+            className='list-group-item'
+            style={{backgroundColor: this.props.colors[strongestPokemon.type[0]]}}
+          >
+            <b>Strongest Pokemon: {strongestPokemon.name} </b>
           </li>
-          <li className='list-group-item'>
-            <b>Weakest Pokemon: {this.weakestPokemon().name}</b>
+          <li
+            className='list-group-item'
+            style={{backgroundColor: this.props.colors[weakestPokemon.type[0]]}}
+          >
+            <b>Weakest Pokemon: {weakestPokemon.name}</b>
           </li>
         </ul>
       </div>
@@ -44,7 +53,8 @@ class SquadStats extends Component {
 function mapStateToProps(state) {
   console.log('state: ', state)
   return {
-    fighters: state.fighters
+    fighters: state.fighters,
+    colors: state.colors
   };
 }
 

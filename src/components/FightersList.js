@@ -13,7 +13,10 @@ class FightersList extends Component {
           {
             this.props.fighters.map(fighter => {
               return (
-                <li key={fighter.id} className='list-group-item'>
+                <li
+                  key={fighter.id} className='list-group-item'
+                  style={{backgroundColor: this.props.colors[fighter.type[0]]}}
+                >
                   <div className='list-item'>{fighter.name}</div>
                   <div className='list-item right-button' onClick={()=>this.props.removePokemonById(fighter.id)}>x</div>
                 </li>
@@ -28,7 +31,8 @@ class FightersList extends Component {
 
 function mapStateToProps(state) {
   return {
-    fighters: state.fighters
+    fighters: state.fighters,
+    colors: state.colors
   };
 }
 
