@@ -30,22 +30,22 @@
       "type": ["bug", "poison"]
     },
     {
-      "id": 16,
-      "name": "Pidgey",
-      "maxCP": 580,
-      "type": ["normal", "flying"]
+      "id": 226,
+      "name": "Mantine",
+      "maxCP": 2310,
+      "type": ["water", "flying"]
     },
     {
-      "id": 19,
-      "name": "Rattata",
-      "maxCP": 588,
+      "id": 133,
+      "name": "Eeve",
+      "maxCP": 969,
       "type": ["normal"]
     },
     {
-      "id": 21,
-      "name": "Spearow",
-      "maxCP": 673,
-      "type": ["normal", "flying"]
+      "id": 77,
+      "name": "Ponyta",
+      "maxCP": 1502,
+      "type": ["fire"]
     },
     {
       "id": 23,

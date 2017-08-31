@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
+import ListItem from './ListItem';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-
 import {removePokemonById} from '../actions';
 
 class FightersList extends Component {
@@ -13,13 +13,12 @@ class FightersList extends Component {
           {
             this.props.fighters.map(fighter => {
               return (
-                <li
-                  key={fighter.id} className='list-group-item'
-                  style={{backgroundColor: this.props.colors[fighter.type[0]]}}
-                >
-                  <div className='list-item'>{fighter.name}</div>
-                  <div className='list-item right-button' onClick={()=>this.props.removePokemonById(fighter.id)}>x</div>
-                </li>
+                <ListItem
+                  key={fighter.id}
+                  pokemon={fighter}
+                  action={this.props.removePokemonById}
+                  actionButton={'x'}
+                />
               )
             })
           }
@@ -31,8 +30,7 @@ class FightersList extends Component {
 
 function mapStateToProps(state) {
   return {
-    fighters: state.fighters,
-    colors: state.colors
+    fighters: state.fighters
   };
 }
 
