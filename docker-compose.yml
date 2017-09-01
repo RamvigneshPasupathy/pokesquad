@@ -1,0 +1,17 @@
+version: "2"
+services:
+  web:
+    image: pokesquad/pokesquad-platform:v1.0.0
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    network_mode: host
+    restart: always
+    ports:
+      - 3000:3000
+    env_file:
+      - ./pokesquad.env
+    entrypoint:
+      - /bin/sh
+      - -c
+      - 'npm start --production'
