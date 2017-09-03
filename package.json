@@ -1,6 +1,7 @@
 {
   "name": "pokesquad",
   "version": "0.1.0",
+  "author": "Ramvignesh Pasupathy",
   "private": true,
   "dependencies": {
     "react": "^15.6.1",
