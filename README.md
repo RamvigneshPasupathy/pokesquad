@@ -2,5 +2,5 @@
 
 ---
 **Useful Commands**
- - `[docker-compose build](https://docs.docker.com/compose/reference/build/)`  - to build your docker services
- - `[docker-compose up](https://docs.docker.com/compose/reference/up/)`  - to start your docker services
+ - [docker-compose build](https://docs.docker.com/compose/reference/build/)  - to build your docker services
+ - [docker-compose up](https://docs.docker.com/compose/reference/up/)  - to start your docker services
